@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-a, a:link, a:visited{
+a, a:link, a:visited {
     color: inherit;
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -19,6 +19,7 @@ li{
     width: 1140px;
     margin: 0 auto;
 }
+/* Global */
 
 header {
     position: fixed;
@@ -29,55 +30,57 @@ header {
     padding: 1rem;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
 }
 
-header nav ul li{
+header nav ul li {
     padding: 10px;
 }
 
-header button{
+header button {
     background: transparent;
     border: 0;
     cursor: pointer;
     color: white;
 }
 
-header h1 button{
+header h1 button {
     font-size: 2rem;
     font-weight: bold;
 }
 
-header nav ul li button{
+header nav ul li button {
     font-size: 1.2rem;
 }
 
-main{
+/* HEADER */
+
+main {
     width: 100%;
     height: 100vh;
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) url('..img/me.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+    url('../img/me.jpg') center center;
     background-size: cover;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-main h4{
+main h4 {
     font-size: 2rem;
 }
 
-main h2{
+main h2 {
     font-size: 3.5rem;
     margin: 2rem 0;;
     letter-spacing: 3px;
@@ -101,7 +104,6 @@ main button.download {
 }
 
 main button.mouse {
-
     background-color: transparent;
     border: none;
     color: white;
@@ -109,7 +111,7 @@ main button.mouse {
     position: absolute;
     bottom: 1rem;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
     animation: upDown 1s ease-in-out infinite;
     cursor: pointer;
 }
@@ -122,59 +124,5 @@ main button.mouse {
     }
     100% {
         bottom: 1rem;
-    }
-}
-
-
-section {
-    padding: 5rem 0;
-}
-
-section:nth-child(2n) {
-    background-color: #f8f8f8;
-}
-
-section .title {
-    margin-bottom: 3rem;
-}
-
-section .title h4 {
-    font-size: 1.3rem;
-    color: #ed4848;
-    /* position: relative */
-}
-
-section .title h2 {
-    font-size: 1.35rem;
-}
-
-section .about-self .left {
-    width: 50%;
-    float: left;
-}
-
-section .about-self .left img {
-    max-width: 100%;
-}
-
-section .about-self .right{
-    width: 50%;
-    float: left;
-    padding: 0 2rem;
-}
-
-
-@media screen and (max-width: 1140px) {
-    main .container {
-        width: 992px;
-    }
-
-    section .about-self .left {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-
-    section .about-self .right {
-        width: 100%;
     }
 }
